@@ -161,3 +161,11 @@
 		border-radius: 50%;
 	}
 }
+
+@media (max-width: 426px) {
+	.ProjectCard {
+	  width: 265px;
+	  height: 470px;
+	}
+  }
+  

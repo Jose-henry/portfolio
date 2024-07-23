@@ -6,16 +6,26 @@ import buddy from '../assets/buddy.jpeg';
 import sentiment from '../assets/sentiment.jpeg';
 import React, { useState } from "react";
 import Footer from './Footer';
+import { useWindowSize } from 'react-use';
 
 const ProjectCard = ({ image, title, link, description, git, technologies }) => {
     const [isExpanded, setIsExpanded] = useState(false);
+    const { width } = useWindowSize();
+
 
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
     };
 
     return (
-        <div className="w-[384px] h-[470px] bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden">
+        <div
+      className="bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden"
+      style={{
+        width: width <= 426 ? '275px' : '384px',
+        height: '470px',
+      }}
+    >
+
             <a href={link}>
                 <img className="w-full h-48 object-cover" src={image} alt={title} />
             </a>
