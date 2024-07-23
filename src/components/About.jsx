@@ -32,13 +32,14 @@ const About = () => {
         <div className='flex flex-col justify-around'>
           <div className='sm:px-16 px-2'>
             <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Manda Nithin, a 2023 graduate🎓 with a passion for crafting robust backend systems and captivating mobile applications.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/nithin-manda-728019214/' target='_blank'>Software developer</a> I specialize in both MEAN and MERN stacks🚀.
+            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Joseph .C. Henry , a 2024 graduate🎓 in EEE with a passion for crafting robust backend and AI systems and interfacing web applications to robotics and Aerospace.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/joseph-c-henry' target='_blank'>Software/embedded engineer</a> I specialize in both MEAN and MERN stacks🚀, AI and robotic systems.
               <br />
-              ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com/@goudnithin77" target='_blank'>Medium</a>, where I delve into the intricacies of software development and technology trends.
-              On a different note, I'm also into photography📸. It's not just a hobby; I see it as a way to capture moments🌟📷, tell stories.</p>
+              ✍️ Beyond coding, I love getting more insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com" target='_blank'>Medium</a> and <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://youtube.com" target='_blank'>Youtube</a>, where I delve into the intricacies of software development and technology trends.
+              <br />
+              On a different note, I'm also into drawing and painting,🎨. It's not just a hobby; I see it as a way to capture moments🌟📷, and tell stories.</p>
 
             <ButtonLink
-              url='https://drive.google.com/file/d/19Vh0nx5JF9G_sgawb_dUIFlGSHtjp_dw/view?usp=drive_link'
+              url='https://drive.google.com/file/d/1voquUPou1xFgjzQIF6l12j0izHd8sw_f/view'
               text='View Resume →'
               padding={`p-3`}
             />
