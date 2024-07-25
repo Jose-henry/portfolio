@@ -23,10 +23,10 @@ export const experiences = [
         'duration': 'January 2024 - Present',
         'logo': '/Phemotron.png',
         'points': [
-                '🔧 **System Development:** Design and develop scalable backend systems and services to support various technologies, products, and services across space, aviation, ground, and electro-optics systems.',
-                '⚙️ **Optimization:** Analyze and optimize system performance, ensuring high availability, reliability, and efficiency of backend systems. Utilize data-driven approaches to refine algorithms and improve overall system performance.',
-                '🚀 **Innovation:** Contribute to pioneering solutions that advance humanity’s welfare and societal progress.',
-                '📚 **Documentation & Reporting:** Maintain thorough documentation of system architectures, codebases, and AI models. Prepare technical reports and presentations to communicate project progress and results to stakeholders.'
+                '🔧 System Development: Design and develop scalable backend systems and services to support various technologies, products, and services across space, aviation, ground, and electro-optics systems.',
+                '⚙️ Optimization: Analyze and optimize system performance, ensuring high availability, reliability, and efficiency of backend systems. Utilize data-driven approaches to refine algorithms and improve overall system performance.',
+                '🚀 Innovation: Contribute to pioneering solutions that advance humanity’s welfare and societal progress.',
+                '📚 Documentation & Reporting: Maintain thorough documentation of system architectures, codebases, and AI models. Prepare technical reports and presentations to communicate project progress and results to stakeholders.'
             ]
             ,
         'url': 'https://phemotron.com',
@@ -37,9 +37,9 @@ export const experiences = [
         'duration': 'March 2024 - Present (remote)',
         'logo': '/te-l.png',
         'points': [
-                '🔍 **Research & Development:** Engaged in software product research and development, exploring innovative solutions and technologies.',
-                '🌐 **APIs & Web Development:** Involved in creating APIs (REST, WebSockets), developing websites (back-end), and building Machine Learning models.',
-                '🤖 **AI Robotics:** Contributed to designing and developing a robot with AI features, including its web interface for seamless interaction and control.'
+                '🔍 Research & Development: Engaged in software product research and development, exploring innovative solutions and technologies.',
+                '🌐 APIs & Web Development: Involved in creating APIs (REST, WebSockets), developing websites (back-end), and building Machine Learning models.',
+                '🤖 AI Robotics: Contributed to designing and developing a robot with AI features, including its web interface for seamless interaction and control.'
             ]
         ,
         'url': 'https://drive.google.com/file/d/1voquUPou1xFgjzQIF6l12j0izHd8sw_f/view',
