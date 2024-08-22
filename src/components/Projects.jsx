@@ -12,52 +12,49 @@ const ProjectCard = ({ image, title, link, description, git, technologies }) => 
     const [isExpanded, setIsExpanded] = useState(false);
     const { width } = useWindowSize();
 
-
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
     };
 
     return (
         <div
-      className="bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden"
-      style={{
-        width: width <= 426 ? '275px' : '384px',
-        height: '470px',
-      }}
-    >
-
+            className="bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden w-full max-w-sm mx-auto"
+            style={{
+                height: '470px',
+            }}
+        >
             <a href={link}>
                 <img className="w-full h-48 object-cover" src={image} alt={title} />
             </a>
-            <div className="p-4 sm:p-6">
+            <div className="p-4">
                 <a href={link}>
-                    <h5 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">{title}</h5>
+                    <h5 className="text-xl sm:text-2xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">{title}</h5>
                 </a>
-                <p className="font-normal text-sm sm:text-base md:text-lg text-gray-300 dark:text-gray-400">
-                    {description.length > 150 ? (
+                <p className="font-normal text-sm sm:text-base text-gray-300 dark:text-gray-400">
+                    {description.length > 100 ? (
                         <>
-                            {description.substring(0, 150)}...{' '}
+                            {description.substring(0, 100)}...{' '}
                             <button onClick={toggleExpand} className="text-blue-500 hover:underline">Read more</button>
                         </>
                     ) : description}
                 </p>
             </div>
-            <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
-                <div className='flex flex-wrap gap-2'>
+            <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <div className='flex flex-wrap gap-2 mb-2 sm:mb-0'>
                     {technologies.map((tag, index) => (
                         <p
                             key={`${index}-${tag}`}
-                            className='text-[14px] text-blue-500'
+                            className='text-[12px] sm:text-[14px] text-blue-500'
                         >
                             #{tag}
                         </p>
                     ))}
                 </div>
-                <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">GitHub</a>
+                <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 hover:text-green-500 duration-300 text-sm sm:text-base">GitHub</a>
             </div>
             {isExpanded && (
                 <div className="absolute inset-0 bg-gray-900 bg-opacity-70 backdrop-blur-lg text-white p-4 flex flex-col justify-center items-center">
-                    <p className="font-normal text-sm sm:text-base md:text-lg text-gray-300 dark:text-gray-400">
+                    <p className="font-normal text-sm sm:text-base text-gray-300 dark:text-gray-400 overflow-y-auto max-h-[80%]">
                         {description}
                     </p>
                     <button onClick={toggleExpand} className="mt-4 text-blue-500 hover:underline">Show less</button>
@@ -70,7 +67,7 @@ const ProjectCard = ({ image, title, link, description, git, technologies }) => 
 const Projects = () => {
     return (
         <div className="bg-black">
-            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center m-4 sm:m-8 lg:m-12">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
